@@ -146,7 +146,7 @@ function submitOrder(e) {
     let message = `*New Order* \n-----------------------------\n *নাম:* ${name}\n *ফোন:* ${phone}\n *ঠিকানা:* ${address}\n *TrxID:* ${trx ? trx : 'N/A'}\n *নোট:* ${note ? note : 'নেই'}\n-----------------------------\n *অর্ডার ডিটেইলস:*\n${productDetails}-----------------------------\n সাব-টোটাল: ${subtotal}\n ডেলিভারি চার্জ: ${delivery}\n *সর্বমোট বিল:* ${total}\n পেমেন্ট: ${paymentText}\n-----------------------------`;
 
     // Send to WhatsApp
-    let myNumber = "8801330975378"; 
+    let myNumber = "8801859875265"; 
     let url = "https://wa.me/" + myNumber + "?text=" + encodeURIComponent(message);
     window.open(url, '_blank').focus();
 }
